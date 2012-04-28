@@ -24,6 +24,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="execjs" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="heroku" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -85,6 +91,12 @@
     <requirement>
       <requirement>
         <dependency name="sass-rails" version="3.2.3" bound="LATEST_IN_BRANCH" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="therubyracer" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
