@@ -1,1 +1,20 @@
-my messages
+All messages for katzil from <%= @start_date.to_date %>
+<br/>
+
+<table border="1">
+  <th>Date</th>
+  <th>Destination</th>
+   <th>Origin</th>
+
+  <% @messages.each do |message| %>
+      <tr>
+        <td><%= I18n.l(message.received, :format=>:long) %></td>
+        <td><%= message.destination %></td>
+        <td><%= message.origin %></td>
+      </tr>
+
+  <% end %>
+</table>
+
+
+<%=link_to "Get latest data", messages_url, :method=>:post%>

@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Smsreply::Application.config.secret_token = '18018e5a84a36be5587b005500e561d3030a9946705dda687be8ac9994f03b2ad0cd426fcab24e3ba9a0bfda13bbf0bf5e7075110c32d2202b659921e0766dde'
+Smsreply::Application.config.secret_token = '4e7afcaf50eb5dc0f725d0cf188b18eb8d38a7a5f4e2348c2f52fadedc9f4750b9bb3d7193da487acc97af1df4d4d899d4075283afdd1b3481b53655d80e27e5'
