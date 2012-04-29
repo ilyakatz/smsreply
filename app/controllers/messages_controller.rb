@@ -17,7 +17,7 @@ class MessagesController < ApplicationController
       full_date = DateTime.strptime("#{date} #{time}", "%m/%d/%Y %H:%M %p") rescue nil
 
       if full_date
-                  debugger
+        debugger
         m = Message.where(:received=>full_date).where(:destination=>destination).where(:origin=>origin)
         if m.present?
           Rails.logger.info("Message already exists")
@@ -49,20 +49,8 @@ class MessagesController < ApplicationController
   end
 
   def data_from_verizon
-    agent = Mechanize.new { |a|
-      a.user_agent_alias = 'Mac Safari'
-    }
-
-    # get the login form & fill it out with the username/password
     vzlink = "https://nbillpay.verizonwireless.com/vzw/accountholder/unbilledusage/UnbilledMessaging.action?d-4019015-e=2&6578706f7274=1&mtn=9177745435&tab=messages"
-    login_form = agent.get(vzlink).form('loginForm')
-    login_form.IDToken1 = 'ilyakatz'
-    login_form.IDToken2 = 'vobla123'
-
-
-    # submit login form
-    file = agent.submit(login_form, login_form.buttons.first)
-    file
+    VerizonMessagesJob.perform(vzlink)
   end
 
 end

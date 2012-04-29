@@ -2,19 +2,26 @@ All messages for katzil from <%= @start_date.to_date %>
 <br/>
 
 <table border="1">
+  <th>Id</th>
   <th>Date</th>
   <th>Destination</th>
-   <th>Origin</th>
+  <th>Origin</th>
+  <th>Autoreplied</th>
+  <th>Autoreplied message</th>
 
   <% @messages.each do |message| %>
       <tr>
+        <td><%= message.id %></td>
         <td><%= I18n.l(message.received, :format=>:long) %></td>
         <td><%= message.destination %></td>
         <td><%= message.origin %></td>
+        <td><%= message.replied_on if message.replied_on and message.reply_message_id.nil?%></td>
+        <td><%= message.reply_message_id %></td>
       </tr>
 
   <% end %>
 </table>
 
 
-<%=link_to "Get latest data", messages_url, :method=>:post%>
+<%= link_to "Get latest data", messages_url, :method=>:post %>
+<%= link_to "Send replies", replies_url %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120428170413) do
+ActiveRecord::Schema.define(:version => 20120429033454) do
 
   create_table "messages", :force => true do |t|
     t.datetime "received"
@@ -19,8 +19,10 @@ ActiveRecord::Schema.define(:version => 20120428170413) do
     t.string   "origin"
     t.string   "direction"
     t.string   "message_type"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.datetime "replied_on"
+    t.integer  "reply_message_id"
   end
 
   add_index "messages", ["destination", "origin", "received"], :name => "index_messages_on_destination_and_origin_and_received", :unique => true
