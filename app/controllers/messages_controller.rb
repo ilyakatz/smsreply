@@ -3,7 +3,7 @@ require 'csv'
 class MessagesController < ApplicationController
 
   def index
-    @messages = current_user.messages
+    @messages = current_user.messages.order("received DESC")
   end
 
   def create
