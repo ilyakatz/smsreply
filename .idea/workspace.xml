@@ -96,19 +96,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="166" selection-end="166" vertical-scroll-proportion="-1.75">
+            <state line="25" column="13" selection-start="669" selection-end="669" vertical-scroll-proportion="0.4935065">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="messages_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="messages_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="50" selection-start="127" selection-end="127" vertical-scroll-proportion="0.124223605">
+            <state line="4" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="-1.7777778">
               <folding />
             </state>
           </provider>
@@ -136,10 +136,10 @@
         <option value="$PROJECT_DIR$/app/views/away_calendars/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/calendar.js" />
         <option value="$PROJECT_DIR$/app/models/message.rb" />
-        <option value="$PROJECT_DIR$/app/views/messages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/jobs/auto_reply_job.rb" />
         <option value="$PROJECT_DIR$/app/jobs/message_auto_reply_job.rb" />
         <option value="$PROJECT_DIR$/app/controllers/messages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/messages/index.html.erb" />
       </list>
     </option>
   </component>
@@ -780,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="166" selection-end="166" vertical-scroll-proportion="-1.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/jobs/auto_reply_job.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="44" selection-start="362" selection-end="362" vertical-scroll-proportion="-5.3333335">
@@ -803,7 +796,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="50" selection-start="127" selection-end="127" vertical-scroll-proportion="0.124223605">
+        <state line="4" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="-1.7777778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/messages/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="669" selection-end="669" vertical-scroll-proportion="0.4935065">
           <folding />
         </state>
       </provider>
