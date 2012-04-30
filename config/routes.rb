@@ -1,4 +1,7 @@
 Smsreply::Application.routes.draw do
+  devise_for :users
+
+  root :to => "messages#index"
   resources :messages
   resources :replies, :only=>[:index]
   # The priority is based upon order of creation:

@@ -9,8 +9,8 @@ gem "pg", :group => :production
 
 gem 'nexmo'
 gem 'mechanize'
-gem 'roo'
 gem 'tropo-webapi-ruby'
+gem 'devise'
 
 
 # Gems used only for assets and not required

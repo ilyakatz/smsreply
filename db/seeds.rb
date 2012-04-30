@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+u = User.create(email: "ilyakatz@gmail.com", password: "secret123")
+u.phone_number_setups << PhoneNumberSetup.create(username: "ilyakatz",
+                                                 password: "vobla123",
+                                                 provider: "Verizon",
+                                                 url : "https://nbillpay.verizonwireless.com/vzw/accountholder/unbilledusage/UnbilledMessaging.action?d-4019015-e=2&6578706f7274=1&mtn=9177745435&tab=messages")
