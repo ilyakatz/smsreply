@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 
-<%= link_to 'Edit', edit_away_calendar_path(@away_calendar) %> |
-<%= link_to 'Back', away_calendars_path %>
+<%= @away_calendar.message %>
+<br/>
+<%= @away_calendar.start_at%>
+<br/>
+<%= @away_calendar.end_at %>
+<br/>
+<%= link_to 'Edit', edit_phone_number_setup_away_calendar_path(@phone_setup, :id=>@away_calendar) %> |
+<%= link_to 'Back', phone_number_setup_away_calendars_path(@phone_setup) %>

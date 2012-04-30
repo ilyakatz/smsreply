@@ -9,13 +9,14 @@
 
 <% @away_calendars.each do |away_calendar| %>
   <tr>
-    <td><%= link_to 'Show', away_calendar %></td>
-    <td><%= link_to 'Edit', edit_away_calendar_path(away_calendar) %></td>
-    <td><%= link_to 'Destroy', away_calendar, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%=away_calendar.message%></td>
+    <td><%= link_to 'Show', [@phone_setup,away_calendar] %></td>
+    <td><%= link_to 'Edit', edit_phone_number_setup_away_calendar_path(@phone_setup, :id=>away_calendar) %></td>
+    <td><%= link_to 'Destroy', [@phone_setup,away_calendar], confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Away calendar', new_away_calendar_path %>
+<%= link_to 'New Away calendar', new_phone_number_setup_away_calendar_path(@phone_setup) %>

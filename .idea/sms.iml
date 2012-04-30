@@ -66,6 +66,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="jquery-ui-rails" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="mechanize" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -115,6 +121,12 @@
     <requirement>
       <requirement>
         <dependency name="uglifier" version="1.0.3" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ui_datepicker-rails3" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -181,8 +193,9 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] bcrypt-ruby (v3.0.1, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/bcrypt-ruby-3.0.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] warden (v1.1.1, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/warden-1.1.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] orm_adapter (v0.0.7, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/orm_adapter-0.0.7)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rails-asset-jqueryui (vRails::Asset::Jqueryui::VERSION, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/rails-asset-jqueryui-0.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] formtastic (v2.2.0, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/formtastic-2.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ui_datepicker-rails3 (v1.0.0, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/ui_datepicker-rails3-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-ui-rails (v0.3.0, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/jquery-ui-rails-0.3.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] unf_ext (v0.0.4, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/unf_ext-0.0.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rdoc (v3.12, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/rdoc-3.12)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.4.1, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/rack-1.4.1)" level="application" />
@@ -205,7 +218,6 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.10, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/treetop-1.4.10)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] journey (v1.0.3, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/journey-1.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v3.0.2, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/arel-3.0.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] ui_datepicker-rails3 (v1.0.0, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/ui_datepicker-rails3-1.0.0)" level="application" />
   </component>
 </module>
 

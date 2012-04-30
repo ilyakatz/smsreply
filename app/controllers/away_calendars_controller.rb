@@ -3,7 +3,7 @@ class AwayCalendarsController < ApplicationController
   # GET /away_calendars.json
   def index
     @away_calendars = current_user.away_calendars
-
+    @phone_setup = current_user.phone_number_setups.find(params[:phone_number_setup_id])
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @away_calendars }
@@ -13,7 +13,7 @@ class AwayCalendarsController < ApplicationController
   # GET /away_calendars/1
   # GET /away_calendars/1.json
   def show
-    @away_calendar = AwayCalendar.find(params[:id])
+    @away_calendar = current_user.away_calendars.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -24,31 +24,32 @@ class AwayCalendarsController < ApplicationController
   # GET /away_calendars/new
   # GET /away_calendars/new.json
   def new
-    @away_calendar = AwayCalendar.new
+    @phone_setup = current_user.phone_number_setups.find(params[:phone_number_setup_id])
+    @away_calendar = AwayCalendar.new(:phone_number_setup_id=>@phone_setup)
 
     respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @away_calendar }
+      format.html
     end
   end
 
   # GET /away_calendars/1/edit
   def edit
+    @phone_setup = current_user.phone_number_setups.find(params[:phone_number_setup_id])
     @away_calendar = AwayCalendar.find(params[:id])
   end
 
   # POST /away_calendars
   # POST /away_calendars.json
   def create
+    @phone_setup = current_user.phone_number_setups.find(params[:phone_number_setup_id])
     @away_calendar = AwayCalendar.new(params[:away_calendar])
+    @away_calendar.phone_number_setup=@phone_setup
 
     respond_to do |format|
       if @away_calendar.save
-        format.html { redirect_to @away_calendar, notice: 'Away calendar was successfully created.' }
-        format.json { render json: @away_calendar, status: :created, location: @away_calendar }
+        format.html { redirect_to [@phone_setup,@away_calendar], notice: 'Away calendar was successfully created.' }
       else
         format.html { render action: "new" }
-        format.json { render json: @away_calendar.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -56,15 +57,14 @@ class AwayCalendarsController < ApplicationController
   # PUT /away_calendars/1
   # PUT /away_calendars/1.json
   def update
-    @away_calendar = AwayCalendar.find(params[:id])
+    @away_calendar = current_user.away_calendars.find(params[:id])
+    @phone_setup = current_user.phone_number_setups.find(params[:phone_number_setup_id])
 
     respond_to do |format|
       if @away_calendar.update_attributes(params[:away_calendar])
-        format.html { redirect_to @away_calendar, notice: 'Away calendar was successfully updated.' }
-        format.json { head :no_content }
+        format.html { redirect_to [@phone_setup,@away_calendar], notice: 'Away calendar was successfully updated.' }
       else
         format.html { render action: "edit" }
-        format.json { render json: @away_calendar.errors, status: :unprocessable_entity }
       end
     end
   end

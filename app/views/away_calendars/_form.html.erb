@@ -1,9 +1,13 @@
-<%= semantic_form_for @away_calendar do |f| %>
+<%= javascript_include_tag "calendar"%>
+<%= stylesheet_link_tag "calendar", :media => "all" %>
+
+<%= semantic_form_for [@phone_setup,@away_calendar] do |f| %>
     <%= f.inputs do %>
-        <%= %>
         <%= f.input :message %>
-        <%= f.input :start_at%>
-        <%= f.input :end_at%>
+        <%= f.input :start_at, :as => :ui_date_picker, :input_html=>{:format=>'%b %d %Y'}  %>
+        <%= f.input :end_at, :as => :ui_date_picker, :input_html=>{:format=>'%b %d %Y'}  %>
     <% end %>
     <%= f.actions %>
 <% end %>
+
+

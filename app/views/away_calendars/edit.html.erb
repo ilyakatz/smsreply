@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @away_calendar %> |
-<%= link_to 'Back', away_calendars_path %>
+<%= link_to 'Show', [@phone_setup,@away_calendar] %> |
+<%= link_to 'Back', phone_number_setup_away_calendars_path(@phone_setup) %>
