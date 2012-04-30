@@ -1,0 +1,2 @@
+module AwayCalendarsHelper
+end

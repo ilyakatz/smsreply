@@ -1,0 +1,21 @@
+<h1>Listing away_calendars</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @away_calendars.each do |away_calendar| %>
+  <tr>
+    <td><%= link_to 'Show', away_calendar %></td>
+    <td><%= link_to 'Edit', edit_away_calendar_path(away_calendar) %></td>
+    <td><%= link_to 'Destroy', away_calendar, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Away calendar', new_away_calendar_path %>

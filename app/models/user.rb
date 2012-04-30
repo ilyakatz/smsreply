@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
 
   has_many :messages
   has_many :phone_number_setups
+  has_many :away_calendars, :through => :phone_number_setups
 end

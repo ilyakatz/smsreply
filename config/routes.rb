@@ -3,6 +3,7 @@ Smsreply::Application.routes.draw do
 
   root :to => "messages#index"
   resources :messages
+  resources :away_calendars
   resources :replies, :only=>[:index]
   # The priority is based upon order of creation:
   # first created -> highest priority.

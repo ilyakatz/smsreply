@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120430015205) do
+ActiveRecord::Schema.define(:version => 20120430142325) do
+
+  create_table "away_calendars", :force => true do |t|
+    t.integer  "phone_number_setup_id"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.string   "message"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
 
   create_table "messages", :force => true do |t|
     t.datetime "received"
