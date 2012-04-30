@@ -8,7 +8,7 @@ class RepliesController < ApplicationController
   private
 
   def send_auto_replies
-    AutoReplyJob.perform(2.days.ago)
+    AutoReplyJob.perform(current_user.phone_number_setups.first)
   end
 
 end

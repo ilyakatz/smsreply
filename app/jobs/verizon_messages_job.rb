@@ -2,7 +2,7 @@ class VerizonMessagesJob
 
   def self.perform(user)
 
-    phone =  user.phone_number_setups.where(provider: "Verizon").first
+    phone = user.phone_number_setups.where(provider: "Verizon").first
     url = phone.url
 
     agent = Mechanize.new { |a|
@@ -35,7 +35,8 @@ class VerizonMessagesJob
                           :origin=>origin,
                           :direction=>direction,
                           :message_type=>type,
-                          :user=>user)
+                          :user=>user,
+                          :phone_number_setup=>phone)
         end
       end
     end

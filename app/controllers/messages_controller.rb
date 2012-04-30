@@ -3,8 +3,7 @@ require 'csv'
 class MessagesController < ApplicationController
 
   def index
-    @start_date=3.days.ago
-    @messages = current_user.messages.where("received > ?", @start_date)
+    @messages = current_user.messages
   end
 
   def create

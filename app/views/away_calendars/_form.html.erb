@@ -4,7 +4,7 @@
 <%= semantic_form_for [@phone_setup,@away_calendar] do |f| %>
     <%= f.inputs do %>
         <%= f.input :message %>
-        <%= f.input :start_at, :as => :ui_date_picker, :input_html=>{:format=>'%b %d %Y'}  %>
+        <%= f.input :start_at, :as => :ui_date_picker, :input_html=>{:format=>'%m %d %Y'}  %>
         <%= f.input :end_at, :as => :ui_date_picker, :input_html=>{:format=>'%b %d %Y'}  %>
     <% end %>
     <%= f.actions %>

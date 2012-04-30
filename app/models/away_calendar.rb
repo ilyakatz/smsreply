@@ -6,4 +6,6 @@ class AwayCalendar < ActiveRecord::Base
   validates_presence_of :message
 
   belongs_to :phone_number_setup
+
+  #TODO: make sure there are no overlappings
 end
