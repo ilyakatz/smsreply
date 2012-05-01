@@ -1,0 +1,22 @@
+<h1>Listing phone_number_setups</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @phone_number_setups.each do |phone_number_setup| %>
+  <tr>
+    <td><%=phone_number_setup.phone%></td>
+    <td><%= link_to 'Show', phone_number_setup %></td>
+    <td><%= link_to 'Edit', edit_phone_number_setup_path(phone_number_setup) %></td>
+    <td><%= link_to 'Destroy', phone_number_setup, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Phone number setup', new_phone_number_setup_path %>

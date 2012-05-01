@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120430181307) do
+ActiveRecord::Schema.define(:version => 20120501030314) do
 
   create_table "away_calendars", :force => true do |t|
     t.integer  "phone_number_setup_id"
@@ -44,9 +44,16 @@ ActiveRecord::Schema.define(:version => 20120430181307) do
     t.string   "username"
     t.string   "password"
     t.string   "url"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "provider_id"
+    t.string   "phone"
+  end
+
+  create_table "providers", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "provider"
   end
 
   create_table "users", :force => true do |t|
