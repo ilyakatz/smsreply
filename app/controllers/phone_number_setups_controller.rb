@@ -2,7 +2,7 @@ class PhoneNumberSetupsController < ApplicationController
   # GET /phone_number_setups
   # GET /phone_number_setups.json
   def index
-    @phone_number_setups = PhoneNumberSetup.all
+    @phone_number_setups = current_user.phone_number_setups
 
     respond_to do |format|
       format.html # index.html.erb
@@ -13,7 +13,7 @@ class PhoneNumberSetupsController < ApplicationController
   # GET /phone_number_setups/1
   # GET /phone_number_setups/1.json
   def show
-    @phone_number_setup = PhoneNumberSetup.find(params[:id])
+    @phone_number_setup = current_user.phone_number_setups.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -34,13 +34,14 @@ class PhoneNumberSetupsController < ApplicationController
 
   # GET /phone_number_setups/1/edit
   def edit
-    @phone_number_setup = PhoneNumberSetup.find(params[:id])
+    @phone_number_setup = current_user.phone_number_setups.find(params[:id])
   end
 
   # POST /phone_number_setups
   # POST /phone_number_setups.json
   def create
     @phone_number_setup = PhoneNumberSetup.new(params[:phone_number_setup])
+    @phone_number_setup.user = current_user
 
     respond_to do |format|
       if @phone_number_setup.save
@@ -56,7 +57,7 @@ class PhoneNumberSetupsController < ApplicationController
   # PUT /phone_number_setups/1
   # PUT /phone_number_setups/1.json
   def update
-    @phone_number_setup = PhoneNumberSetup.find(params[:id])
+    @phone_number_setup = current_user.phone_number_setups.find(params[:id])
 
     respond_to do |format|
       if @phone_number_setup.update_attributes(params[:phone_number_setup])
