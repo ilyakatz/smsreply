@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120502140402) do
+ActiveRecord::Schema.define(:version => 20120502181917) do
 
   create_table "away_calendars", :force => true do |t|
     t.integer  "phone_number_setup_id"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(:version => 20120502140402) do
     t.string   "message_id"
   end
 
-  add_index "messages", ["destination", "origin", "received"], :name => "index_messages_on_destination_and_origin_and_received", :unique => true
+  add_index "messages", ["destination", "origin", "received", "direction"], :name => "index_unique_index", :unique => true
 
   create_table "phone_number_setups", :force => true do |t|
     t.integer  "user_id"
