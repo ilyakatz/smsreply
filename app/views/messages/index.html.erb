@@ -1,3 +1,10 @@
+<%= link_to "Get latest data", messages_url, :method=>:post %>  |
+<%= link_to "Send replies", replies_url %> |
+<%= link_to "Away calendars", phone_number_setup_away_calendars_path(current_user.phone_number_setups.first)%> |
+<%= link_to 'New Away calendar', new_phone_number_setup_away_calendar_path(current_user.phone_number_setups.first) %>  |
+<%= link_to 'New Phone number setup', new_phone_number_setup_path %>
+
+<br>
 Received messages
 
 <table border="1">
@@ -47,10 +54,3 @@ Sent messages
 
   <% end %>
 </table>
-
-
-
-<%= link_to "Get latest data", messages_url, :method=>:post %>  |
-<%= link_to "Send replies", replies_url %> |
-<%= link_to 'New Away calendar', new_phone_number_setup_away_calendar_path(current_user.phone_number_setups.first) %>  |
-<%= link_to 'New Phone number setup', new_phone_number_setup_path %>

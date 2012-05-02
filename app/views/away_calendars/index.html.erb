@@ -10,6 +10,8 @@
 <% @away_calendars.each do |away_calendar| %>
   <tr>
     <td><%=away_calendar.message%></td>
+    <td><%=I18n.l away_calendar.start_at, :format=>:long%></td>
+    <td><%=I18n.l away_calendar.end_at, :format=>:long%></td>
     <td><%= link_to 'Show', [@phone_setup,away_calendar] %></td>
     <td><%= link_to 'Edit', edit_phone_number_setup_away_calendar_path(@phone_setup, :id=>away_calendar) %></td>
     <td><%= link_to 'Destroy', [@phone_setup,away_calendar], confirm: 'Are you sure?', method: :delete %></td>

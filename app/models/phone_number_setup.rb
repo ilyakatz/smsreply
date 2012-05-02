@@ -15,7 +15,7 @@ class PhoneNumberSetup < ActiveRecord::Base
 
   def validate_with_provider
 
-    if provider.name == "Verizon"
+    if provider.name == Provider::VERIZON
       self.url = "https://nbillpay.verizonwireless.com/vzw/accountholder/unbilledusage/UnbilledMessaging.action?d-4019015-e=2&6578706f7274=1&mtn=#{phone}&tab=messages"
       return validate_verizon
     else
