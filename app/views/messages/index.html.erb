@@ -1,7 +1,9 @@
 <%= link_to "Get latest data", messages_url, :method=>:post %>  |
 <%= link_to "Send replies", replies_url %> |
-<%= link_to "Away calendars", phone_number_setup_away_calendars_path(current_user.phone_number_setups.first)%> |
-<%= link_to 'New Away calendar', new_phone_number_setup_away_calendar_path(current_user.phone_number_setups.first) %>  |
+<% if current_user.phone_number_setups %>
+    <%= link_to "Away calendars", phone_number_setup_away_calendars_path(current_user.phone_number_setups.first) %> |
+    <%= link_to 'New Away calendar', new_phone_number_setup_away_calendar_path(current_user.phone_number_setups.first) %>  |
+<% end %>
 <%= link_to 'New Phone number setup', new_phone_number_setup_path %>
 
 <br>
@@ -22,7 +24,7 @@ Received messages
         <td><%= I18n.l(message.received, :format=>:long) %></td>
         <td><%= message.destination %></td>
         <td><%= message.origin %></td>
-        <td><%= message.replied_on if message.replied_on and message.reply_message_id.nil?%></td>
+        <td><%= message.replied_on if message.replied_on and message.reply_message_id.nil? %></td>
         <td><%= message.reply_message_id %></td>
         <td><%= message.reply_text %></td>
       </tr>
@@ -47,7 +49,7 @@ Sent messages
         <td><%= I18n.l(message.received, :format=>:long) %></td>
         <td><%= message.destination %></td>
         <td><%= message.origin %></td>
-        <td><%= message.replied_on if message.replied_on and message.reply_message_id.nil?%></td>
+        <td><%= message.replied_on if message.replied_on and message.reply_message_id.nil? %></td>
         <td><%= message.reply_message_id %></td>
         <td><%= message.reply_text %></td>
       </tr>
