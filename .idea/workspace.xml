@@ -81,7 +81,7 @@
       <file leaf-file-name="message_auto_reply_job.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/jobs/message_auto_reply_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="47" selection-start="846" selection-end="846" vertical-scroll-proportion="0.3131313">
+            <state line="45" column="85" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.57575756">
               <folding />
             </state>
           </provider>
@@ -670,7 +670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/jobs/message_auto_reply_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="47" selection-start="846" selection-end="846" vertical-scroll-proportion="0.3131313">
+        <state line="45" column="85" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.57575756">
           <folding />
         </state>
       </provider>

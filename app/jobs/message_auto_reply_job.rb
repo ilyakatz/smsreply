@@ -43,7 +43,7 @@ class MessageAutoReplyJob
       if response.success?
         success = true
       elsif response.failure?
-        raise "Unable to send message to #{send_to}"
+        raise "Unable to send message to #{send_to}, message_id #{response.message_id}"
       end
     else
       Rails.logger.info("send_message: MOCK Sending message to #{send_to}: #{reply_text}")
