@@ -1,0 +1,8 @@
+<%= link_to "Messages", messages_url%> |
+<% if current_user and current_user.phone_number_setups.present? %>
+    <%= link_to "Away calendars", phone_number_setup_away_calendars_path(current_user.phone_number_setups.first) %> |
+    <%= link_to 'New Away calendar', new_phone_number_setup_away_calendar_path(current_user.phone_number_setups.first) %>  |
+<% end %>
+<%= link_to 'New Phone number setup', new_phone_number_setup_path %> |
+<%= link_to "Sign out", destroy_user_session_path(), :method=>:delete %><br />
+<br>

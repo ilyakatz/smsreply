@@ -3,8 +3,15 @@ require 'csv'
 class MessagesController < ApplicationController
 
   def index
-    @received_messages = current_user.messages.order("received DESC").where(:direction=>"Received")
-    @sent_messages = current_user.messages.order("received DESC").where(:direction=>"Sent")
+    redirect_to messages_received_path
+  end
+
+  def received
+    @messages = current_user.messages.order("received DESC").where(:direction=>"Received")
+  end
+
+  def sent
+    @messages = current_user.messages.order("received DESC").where(:direction=>"Sent")
   end
 
   def create

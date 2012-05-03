@@ -1,0 +1,18 @@
+<%=render :partial=>"common"%>
+
+Sent messages
+
+<table border="1">
+  <th>Id</th>
+  <th>Date</th>
+  <th>Destination</th>
+
+  <% @messages.each do |message| %>
+      <tr>
+        <td><%= message.id %></td>
+        <td><%= I18n.l(message.received, :format=>:short) %></td>
+        <td><%= message.destination %></td>
+      </tr>
+
+  <% end %>
+</table>

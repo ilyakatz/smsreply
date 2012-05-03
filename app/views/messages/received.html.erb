@@ -1,0 +1,26 @@
+<%=render :partial=>"common"%>
+
+Received messages
+
+<table border="1">
+  <th>Id</th>
+  <th>Date</th>
+  <th>Destination</th>
+  <th>Origin</th>
+  <th>Autoreplied</th>
+  <th>Autoreplied message</th>
+  <th>Autoreplied text</th>
+
+  <% @messages.each do |message| %>
+      <tr>
+        <td><%= message.id %></td>
+        <td><%= I18n.l(message.received, :format=>:long) %></td>
+        <td><%= message.destination %></td>
+        <td><%= message.origin %></td>
+        <td><%= message.replied_on if message.replied_on and message.reply_message_id.nil? %></td>
+        <td><%= message.reply_message_id %></td>
+        <td><%= message.reply_text %></td>
+      </tr>
+
+  <% end %>
+</table>

@@ -2,7 +2,9 @@ Smsreply::Application.routes.draw do
   devise_for :users
 
   root :to => "messages#index"
-  resources :messages
+  resources :messages, :only=>[:index, :create]
+  get "messages/received" => "messages#received"
+  get "messages/sent" => "messages#sent"
 
   resources :phone_number_setups do
     resources :away_calendars
