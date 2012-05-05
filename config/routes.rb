@@ -10,6 +10,7 @@ Smsreply::Application.routes.draw do
     resources :away_calendars
   end
   resources :replies, :only=>[:index]
+  resources :nexmo, :only=>[:index,:create]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
