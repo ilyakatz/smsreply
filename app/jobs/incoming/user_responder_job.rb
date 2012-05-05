@@ -2,7 +2,7 @@ class Incoming::UserResponderJob
 
   def self.perform(sender_phone, text, external_id)
     #find possible match of the message that the user is responding to
-    response = ResponseMessage.where(:replied_to=>sender_phone).where("created_at > ? ", 5.days).first
+    response = ResponseMessage.where(:replied_to=>sender_phone).where("created_at > ? ", 1.day.ago).first
 
     #record that there is a response to a response
     UserResponderMessage.create!(:response_message=>response,
