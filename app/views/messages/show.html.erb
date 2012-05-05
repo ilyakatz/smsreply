@@ -1,0 +1,19 @@
+<div><%= @message.id %></div>
+<div><%= I18n.l(@message.received, :format=>:short) %></div>
+<div><%= @message.destination %></div>
+<div><%= @message.origin %></div>
+<br/>
+Autoreponse sent
+<br/>
+<div><%= I18n.l(@message.replied_on, :format=>:short) if @message.replied_on and @message.reply_message_id.nil? %></div>
+<div><%= @message.reply_message_id %></div>
+<div><%= @message.reply_text %></div>
+
+<br/>
+User reponded to your away message
+<br/>
+<div>
+  <% @message.user_responder_messages.each do |message| %>
+      <div><%= message.text %></div>
+  <% end %>
+</div>

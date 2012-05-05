@@ -10,6 +10,7 @@ Received messages
   <th>Autoreplied</th>
   <th>Autoreplied message</th>
   <th>Autoreplied text</th>
+  <th>Response</th>
 
   <% @messages.each do |message| %>
       <tr>
@@ -20,6 +21,7 @@ Received messages
         <td><%= I18n.l(message.replied_on, :format=>:short) if message.replied_on and message.reply_message_id.nil? %></td>
         <td><%= message.reply_message_id %></td>
         <td><%= message.reply_text %></td>
+        <td><%= link_to("see response", message) if message.user_responder_messages.count > 0 %></td>
       </tr>
 
   <% end %>

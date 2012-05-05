@@ -4,6 +4,8 @@ class Message < ActiveRecord::Base
 
   has_many :response_messages
 
+  has_many :user_responder_messages, :through => :response_messages
+
   attr_accessible :received, :destination, :origin, :direction, :message_type,
                   :reply_message_id, :replied_on, :user,
                   :phone_number_setup, :reply_text

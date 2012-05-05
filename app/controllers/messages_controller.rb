@@ -14,6 +14,10 @@ class MessagesController < ApplicationController
     @messages = current_user.messages.order("received DESC").where(:direction=>"Sent")
   end
 
+  def show
+    @message = current_user.messages.find(params[:id])
+  end
+
   def create
 
     current_user.phone_number_setups.where(provider_id: Provider.find_by_name(Provider::VERIZON)).each do |phone|
