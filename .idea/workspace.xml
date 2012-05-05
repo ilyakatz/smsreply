@@ -60,19 +60,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="42" selection-start="380" selection-end="380" vertical-scroll-proportion="0.14141414">
+            <state line="6" column="16" selection-start="202" selection-end="202" vertical-scroll-proportion="-0.44444445">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nexmo_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="nexmo_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/nexmo_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="23" selection-start="241" selection-end="241" vertical-scroll-proportion="-4.888889">
+            <state line="11" column="24" selection-start="255" selection-end="255" vertical-scroll-proportion="0.22222222">
               <folding />
             </state>
           </provider>
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/app/views/messages/_common.html.erb" />
         <option value="$PROJECT_DIR$/app/views/messages/sent.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/nexmo_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/nexmo_controller.rb" />
       </list>
     </option>
   </component>
@@ -577,16 +577,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/nexmo_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="241" selection-end="241" vertical-scroll-proportion="-4.888889">
+        <state line="6" column="16" selection-start="202" selection-end="202" vertical-scroll-proportion="-0.44444445">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/nexmo_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="380" selection-end="380" vertical-scroll-proportion="0.14141414">
+        <state line="11" column="24" selection-start="255" selection-end="255" vertical-scroll-proportion="0.22222222">
           <folding />
         </state>
       </provider>

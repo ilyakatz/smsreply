@@ -4,12 +4,12 @@ class NexmoController <ApplicationController
 
   def index
     Rails.logger.info params.inspect
-    render :status=>:ok
+    render :text=>"ok", :status=>:ok
   end
 
   def create
     Rails.logger.info params.inspect
-    render :status=>:ok
+    render :text=>"ok", :status=>:ok
   end
 
 end
