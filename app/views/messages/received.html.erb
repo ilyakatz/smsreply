@@ -14,10 +14,10 @@ Received messages
   <% @messages.each do |message| %>
       <tr>
         <td><%= message.id %></td>
-        <td><%= I18n.l(message.received, :format=>:long) %></td>
+        <td><%= I18n.l(message.received, :format=>:short) %></td>
         <td><%= message.destination %></td>
         <td><%= message.origin %></td>
-        <td><%= message.replied_on if message.replied_on and message.reply_message_id.nil? %></td>
+        <td><%= I18n.l(message.replied_on, :format=>:short) if message.replied_on and message.reply_message_id.nil? %></td>
         <td><%= message.reply_message_id %></td>
         <td><%= message.reply_text %></td>
       </tr>

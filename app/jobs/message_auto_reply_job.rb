@@ -9,14 +9,17 @@ class MessageAutoReplyJob
     end
 
     #TODO: last day is not included
-    replied = Message.where(:origin=>message.origin).
+    replied = Message.joins(:response_messages).
+        where(:origin=>message.origin).
         where(:destination=>message.destination).
-        where("replied_on is not null").
+        where("response_messages.replied_on is not null").
         where("received >= ?", start_at).
         where("received <= ?", end_at)
 
     if replied.present?
-      message.update_attributes(:reply_message_id=>replied.first.id, :replied_on=>replied.first.replied_on) unless message.replied_on
+      message.response_messages << ResponseMessage.create!(
+          :reply_message_id=>replied.first.id,
+          :replied_on=>replied.first.replied_on) unless message.replied_on
     else
       if message.direction == "Received"
         send_message(message, reply_text, message.origin)
@@ -33,7 +36,7 @@ class MessageAutoReplyJob
     #TODO: refactor to move the hardcoded stuff
     if ENV['SEND_MESSAGE'] or Rails.env.production?
       Rails.logger.info("send_message: Sending message to #{send_to}: #{reply_text}")
-      nexmo = Nexmo::Client.new("1ba7bd6b", "eea6251d")
+      nexmo = Nexmo::Client.new("1ba7bd6b", "asasd")
 
       response = nexmo.send_message({
                                         from: '19175215860',
@@ -51,10 +54,10 @@ class MessageAutoReplyJob
     end
 
     if success
-      message.replied_on=Time.now
-      message.reply_text =reply_text
-      message.message_id = response.message_id if response and response.message_id
-      message.save!
+      message.response_messages << ResponseMessage.create!(external_id: response.try(:message_id),
+                                                           reply_text: reply_text,
+                                                           replied_on: Time.now,
+                                                           replied_to: send_to)
     end
 
   end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120502181917) do
+ActiveRecord::Schema.define(:version => 20120505035400) do
 
   create_table "away_calendars", :force => true do |t|
     t.integer  "phone_number_setup_id"
@@ -30,12 +30,8 @@ ActiveRecord::Schema.define(:version => 20120502181917) do
     t.string   "message_type"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
-    t.datetime "replied_on"
-    t.integer  "reply_message_id"
     t.integer  "user_id"
     t.integer  "phone_number_setup_id"
-    t.string   "reply_text"
-    t.string   "message_id"
   end
 
   add_index "messages", ["destination", "origin", "received", "direction"], :name => "index_unique_index", :unique => true
@@ -55,6 +51,17 @@ ActiveRecord::Schema.define(:version => 20120502181917) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "response_messages", :force => true do |t|
+    t.integer  "message_id"
+    t.string   "external_id"
+    t.text     "reply_text"
+    t.datetime "replied_on"
+    t.integer  "reply_message_id"
+    t.string   "replied_to"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "users", :force => true do |t|
