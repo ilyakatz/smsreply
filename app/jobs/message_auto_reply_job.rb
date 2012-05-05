@@ -36,7 +36,7 @@ class MessageAutoReplyJob
     #TODO: refactor to move the hardcoded stuff
     if ENV['SEND_MESSAGE'] or Rails.env.production?
       Rails.logger.info("send_message: Sending message to #{send_to}: #{reply_text}")
-      nexmo = Nexmo::Client.new("1ba7bd6b", "asasd")
+      nexmo = Nexmo::Client.new("1ba7bd6b", "eea6251d")
 
       response = nexmo.send_message({
                                         from: '19175215860',

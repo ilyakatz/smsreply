@@ -42,19 +42,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="response_message.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="response_message.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/response_message.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="100" selection-start="143" selection-end="143" vertical-scroll-proportion="0.019966722">
+            <state line="1" column="100" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message_auto_reply_job.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="message_auto_reply_job.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/jobs/message_auto_reply_job.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="78" selection-start="2052" selection-end="2052" vertical-scroll-proportion="0.0">
+            <state line="38" column="53" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.5407654">
               <folding />
             </state>
           </provider>
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20120505035400_remove_autoreply_attributes_from_message.rb" />
         <option value="$PROJECT_DIR$/app/models/message.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120505034630_create_response_messages.rb" />
-        <option value="$PROJECT_DIR$/app/jobs/message_auto_reply_job.rb" />
         <option value="$PROJECT_DIR$/app/models/response_message.rb" />
+        <option value="$PROJECT_DIR$/app/jobs/message_auto_reply_job.rb" />
       </list>
     </option>
   </component>
@@ -681,16 +681,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/jobs/message_auto_reply_job.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/response_message.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="78" selection-start="2052" selection-end="2052" vertical-scroll-proportion="0.0">
+        <state line="1" column="100" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/response_message.rb">
+    <entry file="file://$PROJECT_DIR$/app/jobs/message_auto_reply_job.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="100" selection-start="143" selection-end="143" vertical-scroll-proportion="0.019966722">
+        <state line="38" column="53" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.5407654">
           <folding />
         </state>
       </provider>
