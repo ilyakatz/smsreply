@@ -7,6 +7,7 @@ gem 'rails', '3.2.3'
 
 gem "pg", :group => :production
 
+gem "thin"
 gem 'nexmo'
 gem 'mechanize'
 gem 'tropo-webapi-ruby'
