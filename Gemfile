@@ -27,6 +27,7 @@ gem 'uglifier', '>= 1.0.3'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'ui_datepicker-rails3'
+gem 'mobile_path', :git=>"git://github.com/ilyakatz/mobile_path.git"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

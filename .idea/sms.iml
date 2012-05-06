@@ -78,6 +78,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="mobile_path" version="0" bound="GREATER_OR_EQUAL" git="true" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="mysql2" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
@@ -196,6 +202,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] formtastic (v2.2.0, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/formtastic-2.2.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] ui_datepicker-rails3 (v1.0.0, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/ui_datepicker-rails3-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-ui-rails (v0.3.0, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/jquery-ui-rails-0.3.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mobile_path (v0.1.0, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/bundler/gems/mobile_path-293eec62511e)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] unf_ext (v0.0.4, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/unf_ext-0.0.4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rdoc (v3.12, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/rdoc-3.12)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.4.1, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/rack-1.4.1)" level="application" />

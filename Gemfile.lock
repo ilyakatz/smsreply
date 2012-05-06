@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/ilyakatz/mobile_path.git
+  revision: 293eec62511e74885987f9c6b7a75f3b0d839b61
+  specs:
+    mobile_path (0.1.0)
+      rails (~> 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -176,6 +183,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   mechanize
+  mobile_path!
   mysql2
   nexmo
   pg
