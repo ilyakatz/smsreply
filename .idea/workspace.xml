@@ -36,7 +36,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="597" selection-end="597" vertical-scroll-proportion="-10.666667">
+            <state line="23" column="13" selection-start="556" selection-end="556" vertical-scroll-proportion="-9.777778">
               <folding />
             </state>
           </provider>
@@ -45,7 +45,7 @@
       <file leaf-file-name="README.rdoc" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rdoc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="36" selection-start="186" selection-end="186" vertical-scroll-proportion="0.1">
+            <state line="4" column="46" selection-start="196" selection-end="196" vertical-scroll-proportion="0.1">
               <folding />
             </state>
           </provider>
@@ -54,7 +54,7 @@
       <file leaf-file-name="resque.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/resque.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="69" selection-start="66" selection-end="66" vertical-scroll-proportion="-1.3333334">
+            <state line="1" column="38" selection-start="41" selection-end="61" vertical-scroll-proportion="-0.44444445">
               <folding />
             </state>
           </provider>
@@ -63,7 +63,7 @@
       <file leaf-file-name="mobile.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/mobile_views/layouts/mobile.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="45" selection-start="161" selection-end="161" vertical-scroll-proportion="-1.25">
+            <state line="13" column="25" selection-start="265" selection-end="265" vertical-scroll-proportion="-3.25">
               <folding />
             </state>
           </provider>
@@ -555,9 +555,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/mobile_views/layouts/mobile.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="45" selection-start="161" selection-end="161" vertical-scroll-proportion="-1.25">
+        <state line="23" column="13" selection-start="556" selection-end="556" vertical-scroll-proportion="-9.777778">
           <folding />
         </state>
       </provider>
@@ -569,23 +569,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/mobile_views/layouts/mobile.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="597" selection-end="597" vertical-scroll-proportion="-10.666667">
+        <state line="13" column="25" selection-start="265" selection-end="265" vertical-scroll-proportion="-3.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/resque.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="69" selection-start="66" selection-end="66" vertical-scroll-proportion="-1.3333334">
+        <state line="1" column="38" selection-start="41" selection-end="61" vertical-scroll-proportion="-0.44444445">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36" selection-start="186" selection-end="186" vertical-scroll-proportion="0.1">
+        <state line="4" column="46" selection-start="196" selection-end="196" vertical-scroll-proportion="0.1">
           <folding />
         </state>
       </provider>
