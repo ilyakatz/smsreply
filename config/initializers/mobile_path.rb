@@ -1,3 +1,3 @@
 MobilePath.configure do |config|
-  config.subdomain = "m"
+  config.subdomain = ""
 end
