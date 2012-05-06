@@ -7,6 +7,8 @@ heroku config:add `heroku config -s --app=smsreply|grep SHARED_DATABASE_URL` --a
 
 After deploy, do this
 
+git push worker master
+git push worker master
 heroku run QUEUE=* rake environment resque:work --app=smsreply-worker
 
 

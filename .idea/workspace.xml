@@ -51,19 +51,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.rdoc" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.rdoc" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.rdoc">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="-4.4444447">
+            <state line="12" column="0" selection-start="382" selection-end="452" vertical-scroll-proportion="0.3">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="284" selection-end="284" vertical-scroll-proportion="0.175">
+            <state line="3" column="14" selection-start="178" selection-end="178" vertical-scroll-proportion="-1.3333334">
               <folding />
             </state>
           </provider>
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/lib/tasks/resque.rake" />
-        <option value="$PROJECT_DIR$/README.rdoc" />
         <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/README.rdoc" />
       </list>
     </option>
   </component>
@@ -592,16 +592,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.rdoc">
+    <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="406" selection-end="406" vertical-scroll-proportion="-4.4444447">
+        <state line="3" column="14" selection-start="178" selection-end="178" vertical-scroll-proportion="-1.3333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
+    <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="284" selection-end="284" vertical-scroll-proportion="0.175">
+        <state line="12" column="0" selection-start="382" selection-end="452" vertical-scroll-proportion="0.3">
           <folding />
         </state>
       </provider>
