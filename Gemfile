@@ -34,6 +34,8 @@ gem "resque-scheduler", ">=2.0.0.h"
 gem "resque-pause"
 gem "resque-history", ">=1.6.0"
 
+gem 'foreman'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
