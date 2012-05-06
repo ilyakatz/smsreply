@@ -261,6 +261,9 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.10, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/treetop-1.4.10)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] journey (v1.0.3, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/journey-1.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v3.0.2, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/arel-3.0.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] resque-pause (vResque::Plugins::Pause::VERSION, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/resque-pause-0.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] resque-history (v1.7.1, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/resque-history-1.7.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] resque-history (v1.7.1, /Users/ilyakatz/.rvm/gems/ruby-1.9.3-p125@smsreply/gems/resque-history-1.7.1)" level="application" />
   </component>
 </module>
 

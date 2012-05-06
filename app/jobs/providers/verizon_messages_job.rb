@@ -2,7 +2,8 @@ class Providers::VerizonMessagesJob
 
   @queue = :providers
 
-  def self.perform(phone)
+  def self.perform(phone_number_setup_id)
+    phone = PhoneNumberSetup.find(phone_number_setup_id)
     url = phone.url
 
     agent = Mechanize.new { |a|

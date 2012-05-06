@@ -21,7 +21,7 @@ class MessagesController < ApplicationController
   def create
 
     current_user.phone_number_setups.where(provider_id: Provider.find_by_name(Provider::VERIZON)).each do |phone|
-      Providers::VerizonMessagesJob.perform(phone)
+      Providers::VerizonMessagesJob.perform(phone.id)
     end
 
     redirect_to messages_path
