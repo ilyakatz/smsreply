@@ -1,5 +1,7 @@
 class Providers::VerizonMessagesJob
 
+  @queue = :providers
+
   def self.perform(phone)
     url = phone.url
 

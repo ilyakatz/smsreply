@@ -1,8 +1,9 @@
 == Configration
 
 heroku addons:add redistogo:nano --app=smsreply
-heroku config:add `heroku config -s --app=smsreply|grep redis` --app=smsreply-worker
 heroku config:add REDISTOGO_URL=redis://XXXXXX/ --app=smsreply
+heroku config:add `heroku config -s --app=smsreply|grep redis` --app=smsreply-worker
+heroku config:add `heroku config -s --app=smsreply|grep SHARED_DATABASE_URL` --app=smsreply-worker
 
 == Welcome to Rails
 
