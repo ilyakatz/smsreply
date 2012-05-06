@@ -1,3 +1,9 @@
+require "resque/server"
+#require 'resque_scheduler'
+require 'resque-pause/server'
+require 'resque-history/server'
+
+
 Smsreply::Application.routes.draw do
   devise_for :users
 
@@ -11,7 +17,12 @@ Smsreply::Application.routes.draw do
     resources :away_calendars
   end
   resources :replies, :only=>[:index]
-  resources :nexmo, :only=>[:index,:create]
+  resources :nexmo, :only=>[:index, :create]
+
+
+#  constraints CanAccessResque do
+    mount Resque::Server.new, :at => "/resque"
+#  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

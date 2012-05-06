@@ -29,6 +29,12 @@ gem 'jquery-ui-rails'
 gem 'ui_datepicker-rails3'
 gem 'mobile_path', :git=>"git://github.com/ilyakatz/mobile_path.git"
 
+gem "resque"
+gem "resque-scheduler", ">=2.0.0.h"
+gem "resque-pause"
+gem "resque-history", ">=1.6.0"
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
