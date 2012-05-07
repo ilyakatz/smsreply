@@ -1,4 +1,4 @@
-class Cron::GetLatestMessagesJob
+class Cron::GetLatestMessagesJob  < TheJob
 
   def self.perform
     PhoneNumberSetup.all.each do |phone|

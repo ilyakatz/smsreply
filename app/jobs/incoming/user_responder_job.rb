@@ -1,4 +1,4 @@
-class Incoming::UserResponderJob
+class Incoming::UserResponderJob  < TheJob
 
   def self.perform(sender_phone, text, external_id)
     #find possible match of the message that the user is responding to

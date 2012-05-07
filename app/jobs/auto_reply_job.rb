@@ -1,4 +1,4 @@
-class AutoReplyJob
+class AutoReplyJob < TheJob
 
   def self.perform(phone_number_setup)
     phone_number_setup.away_calendars.each do |away|

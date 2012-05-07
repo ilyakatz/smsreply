@@ -1,4 +1,4 @@
-class MessageAutoReplyJob
+class MessageAutoReplyJob < TheJob
 
   def self.perform(message_id, start_at, end_at, reply_text)
 

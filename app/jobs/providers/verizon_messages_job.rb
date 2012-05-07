@@ -1,4 +1,4 @@
-class Providers::VerizonMessagesJob
+class Providers::VerizonMessagesJob  < TheJob
 
   @queue = :providers
 
