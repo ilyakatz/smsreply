@@ -5,7 +5,9 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "pg", :group => :production
+group :production do
+  gem "pg"
+end
 
 gem "thin"
 gem 'nexmo'

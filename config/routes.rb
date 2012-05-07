@@ -1,8 +1,10 @@
 require "resque/server"
-#require 'resque_scheduler'
+require 'resque_scheduler'
+require 'resque_scheduler/server'
 require 'resque-pause/server'
 require 'resque-history/server'
 
+Resque.schedule = YAML.load_file(File.join(Rails.root, 'config/resque_schedule.yml'))
 
 Smsreply::Application.routes.draw do
   devise_for :users

@@ -1,0 +1,6 @@
+get_latest_messages:
+  every: "30m"
+  queue: cron
+  class: Cron::GetLatestMessagesJob
+  description: "Get latest messages for all registered phones"
+  rails_envs: development, production, staging
