@@ -33,7 +33,7 @@ gem 'ui_datepicker-rails3'
 gem 'mobile_path', :git=>"git://github.com/ilyakatz/mobile_path.git"
 
 gem "resque"
-gem "resque-scheduler", ">=2.0.0.h"
+gem "resque-scheduler", ">=2.0.0.h", require: 'resque_scheduler'
 gem "resque-pause"
 gem "resque-history", ">=1.6.0"
 
