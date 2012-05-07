@@ -1,3 +1,3 @@
 web: bundle exec rails server thin -p $PORT
-worker: bundle exec rake environment resque:work QUEUE=*
-scheduler: bundle exec rake resque:scheduler
+#http://grosser.it/2012/04/14/resque-scheduler-on-heroku-without-extra-workers/
+worker: bundle exec rake environment schedule_and_work QUEUE=*
