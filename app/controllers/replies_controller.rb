@@ -8,7 +8,9 @@ class RepliesController < ApplicationController
   private
 
   def send_auto_replies
-    AutoReplyJob.perform(current_user.phone_number_setups.first)
+    current_user.away_calendars.each do |away|
+      Resque.enqueue(AutoReplyJob,away.id)
+    end
   end
 
 end

@@ -1,5 +1,7 @@
 class MessageAutoReplyJob < TheJob
 
+  @queue = :replies
+
   def self.perform(message_id, start_at, end_at, reply_text)
 
     message = Message.find(message_id)

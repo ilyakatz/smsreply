@@ -1,17 +1,19 @@
 class AutoReplyJob < TheJob
 
-  def self.perform(phone_number_setup)
-    phone_number_setup.away_calendars.each do |away|
-      autoreply(away)
-    end
-  end
+  @queue = :replies
 
-  private
-
-  def self.autoreply(away_settings)
-    Message.where("received >= ?", away_settings.start_at).where("received <= ?", away_settings.end_at).each do |message|
-      MessageAutoReplyJob.perform(message.id, away_settings.start_at, away_settings.end_at, away_settings.message)
+  def self.perform(away_settings_id)
+    away_calendar = AwayCalendar.find(away_settings_id)
+    scope = away_calendar.messages.where("received >= ?", away_calendar.start_at).
+        where("received <= ?", away_calendar.end_at)
+    scope = scope.where("messages.created_at >= ?", away_calendar.last_run) if away_calendar.last_run
+    scope.each do |message|
+      Rails.logger.debug("Enqueuing #{message.id}")
+      Resque.enqueue(MessageAutoReplyJob, message.id, away_calendar.start_at, away_calendar.end_at, away_calendar.message)
     end
+
+    away_calendar.last_run = Time.now
+    away_calendar.save!
   end
 
 end

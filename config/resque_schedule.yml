@@ -4,3 +4,9 @@ get_latest_messages:
   class: Cron::GetLatestMessagesJob
   description: "Get latest messages for all registered phones"
   rails_envs: development, production, staging
+
+send_autoreplies:
+  every: "30m"
+  class: Cron::SendAutorepliesJob
+  description: "Send auto-replies if necessary"
+  rails_envs: development, production, staging

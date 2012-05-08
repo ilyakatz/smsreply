@@ -2,6 +2,7 @@ class PhoneNumberSetup < ActiveRecord::Base
   attr_accessible :password, :url, :user_id, :username, :provider_id, :phone
 
   belongs_to :user
+  has_many :messages, :through=>:user
   has_many :away_calendars
 
   belongs_to :provider
