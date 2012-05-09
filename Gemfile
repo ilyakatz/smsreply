@@ -14,6 +14,8 @@ gem 'nexmo'
 gem 'mechanize'
 gem 'tropo-webapi-ruby'
 gem 'devise'
+gem "omniauth"
+gem "omniauth-facebook"
 gem 'formtastic'
 
 

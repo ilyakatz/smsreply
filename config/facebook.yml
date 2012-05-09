@@ -1,0 +1,13 @@
+development:
+  app_name: smscow_dev
+  app_id: 282573695169435
+  api_key: e79e6ccaac1bd41b4f2e3d6da8cce1a2
+
+test:
+  app_id: dummy
+  api_key: dummy
+
+staging:
+  app_name: smscow
+  app_id: 293810204039399
+  api_key: 4698c4170c7182e64ea639d0fc2366d0

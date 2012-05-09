@@ -7,7 +7,11 @@ require 'resque-history/server'
 Resque.schedule = YAML.load_file(File.join(Rails.root, 'config/resque_schedule.yml'))
 
 Smsreply::Application.routes.draw do
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   devise_for :users
+#  devise_scope :user do
+#    get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'
+#  end
 
   root :to => "messages#index"
   get "messages/received" => "messages#received"
@@ -23,7 +27,7 @@ Smsreply::Application.routes.draw do
 
 
 #  constraints CanAccessResque do
-    mount Resque::Server.new, :at => "/resque"
+  mount Resque::Server.new, :at => "/resque"
 #  end
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -7,6 +7,6 @@ development:
   #adapter: jdbcmysql
   adapter: mysql2
   host: localhost
-  database: smsreply_DEV
+  database: smscow_dev
   username: root
   password:

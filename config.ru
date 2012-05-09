@@ -2,9 +2,3 @@
 
 require ::File.expand_path('../config/environment',  __FILE__)
 run Smsreply::Application
-
-require 'resque/server'
-run Rack::URLMap.new(
-    "/" => Rails.application,
-    "/resquew" => Resque::Server.new
-)
