@@ -1,4 +1,7 @@
 class Message < ActiveRecord::Base
+
+  paginates_per 25
+
   belongs_to :user
   belongs_to :phone_number_setup
 

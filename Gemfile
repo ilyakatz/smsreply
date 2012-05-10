@@ -40,6 +40,7 @@ gem "resque-pause"
 gem "resque-history", ">=1.6.0"
 
 gem 'foreman'
+gem 'kaminari'
 
 
 # To use ActiveModel has_secure_password

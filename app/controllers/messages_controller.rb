@@ -7,11 +7,11 @@ class MessagesController < ApplicationController
   end
 
   def received
-    @messages = current_user.messages.order("received DESC").where(:direction=>"Received")
+    @messages = current_user.messages.order("received DESC").where(:direction=>"Received").page(params[:page])
   end
 
   def sent
-    @messages = current_user.messages.order("received DESC").where(:direction=>"Sent")
+    @messages = current_user.messages.order("received DESC").where(:direction=>"Sent").page(params[:page])
   end
 
   def show
